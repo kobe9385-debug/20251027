@@ -123,6 +123,11 @@ function mousePressed() {
 			// 呼叫顯示 iframe 的函數，並傳入講義網址
 			showIframe('https://hackmd.io/@KN034512/B1punJ96ll');
 		}
+		// 檢查是否點擊到 "測驗系統"
+		// y 座標在 160 到 160+60 (行高) 之間
+		else if (mouseY > 160 && mouseY < 220) {
+			showIframe('https://kobe9385-debug.github.io/20251103/');
+		}
 	}
 }
 
